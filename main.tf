@@ -5,20 +5,17 @@
 #   Change where replace is done. Move to earlier in process. On initial `name`?
 
 module "enabled" {
-  source  = "devops-workflow/boolean/local"
-  version = "0.1.1"
+  source  = "git::https://github.com/WiserSolutions/terraform-local-boolean.git"
   value   = "${var.enabled}"
 }
 
 module "namespace-env" {
-  source  = "devops-workflow/boolean/local"
-  version = "0.1.1"
+  source  = "git::https://github.com/WiserSolutions/terraform-local-boolean.git"
   value   = "${var.namespace-env}"
 }
 
 module "namespace-org" {
-  source  = "devops-workflow/boolean/local"
-  version = "0.1.1"
+  source  = "git::https://github.com/WiserSolutions/terraform-local-boolean.git"
   value   = "${var.namespace-org}"
 }
 
